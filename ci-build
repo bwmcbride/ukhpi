@@ -2,5 +2,5 @@
 # Run UKHPI tests
 
 set -e
-ssh-agent bash -c "ssh-add ~/.ssh/epi_deploy ; bundle"
-rake test
+ssh-agent bash -c "ssh-add ~/.ssh/epi_deploy ; bundle --path vendor/bundle"
+bundle exec rake test
